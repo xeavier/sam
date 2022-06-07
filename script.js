@@ -161,58 +161,6 @@ function selected(clicked_id)
   { 
     let isexit = selectSeats.find(c => c !== clicked_id)
     selectSeats.push(clicked_id)
-    // let isexit = selectedSeats.find(c => c.v === clicked_id)
-    // if (isexit) {
-    //     console.log('t');
-    //     let s = selectedSeats.find(c => c.v === clicked_id)
-    //     s.count += 1;
-    //     console.log(s);
-    // }
-    // let chars = selectedSeats;
-    // let uniqueChars = [];
-    // chars.forEach((c) => {
-    //     if (!uniqueChars.includes(c)) {
-    //         uniqueChars.push(c);
-    //     }
-    // });
-    // selectedSeats = uniqueChars;
-    // if(selectedSeats.find(el => el === clicked_id)){
-    //     // selectedSeats.filter(el => el !== clicked_id)
-    //     console.log('s');
-    // }
-    // if(selectedSeats.includes(clicked_id)){
-    //      for( var i = 0; i < selectedSeats.length; i++){ 
-    
-    //         if ( selectedSeats[i] === clicked_id) { 
-        
-    //             selectedSeats.splice(i, 1); 
-    //         }
-        
-    //      }
-    //     //console.log('t');
-    //     }
-//     selectedSeats.forEach(myFunction);
- 
-// function myFunction(item, i) {
-//   if(item.count > 0){
-//     console.log('d');
-//     //selectedSeats.filter(el => el !== item)
-//     selectedSeats.splice(i, 1);
-//   } 
-// }
-    // for (var i = 0; i < selectedSeats.length; i++) {
-
-    //     if (selectedSeats[i] === clicked_id) {
-    //         console.log('t');
-    //         selectedSeats.splice(i, 1);
-    //     }
-
-    //     if (isexit && selectedSeats[i] === clicked_id) {
-    //         console.log('t');
-    //         selectedSeats.splice(i, 1);
-    //     }
-
-    // }
     let r = selectSeats
     console.log(selectSeats);
     header.innerHTML = !selectSeats.length?"Select seats": `Selected seats = ${r}`;
